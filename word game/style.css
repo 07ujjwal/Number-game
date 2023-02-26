@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Press Start 2P', sans-serif;
+    color: #eee;
+    background-color: #222;
+}
+
+header{
+    height: 35vh;
+    border-bottom: 8px solid #eee;
+    position: relative;
+}
+
+main{
+    height: 65vh;
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 55rem;
+}
+
+.right{
+    width: 55rem;
+    font-size: 2rem;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(0, 12rem);
+}
+
+.btn{
+    border: none;
+    background-color: #eee;
+    color: #222;
+    font-size: 2rem;
+    font-family: inherit;
+    padding: 2rem 2rem;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #ccc;
+}
+
+.again{
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+}
+
+.number{
+    background: #eee;
+    color: #333;
+    font-size: 6rem;
+    width: 12rem;
+    text-align: center;
+    padding: 3rem 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+}
+
+.range{
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    
+}
+
+.guess{
+  background: none;
+  border: 4px solid #eee;
+  font-family: inherit;
+  color: inherit;
+  font-size: 4.8rem;
+  padding: 2.1rem;
+  width: 15rem;
+  align-items: center;
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.message {
+    margin-bottom: 8rem;
+    height: 3rem;
+  }
+  
+.label-score {
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 35em) {
+    h1{
+        font-size: 3.4rem;
+        transform: translate(0, 10rem);
+    }
+
+    .btn{
+        padding: 1.2rem 1.2rem;
+    }
+
+    .guess{
+        padding: 1.2rem;
+    }
+
+    .number{
+        font-size: 4.8rem;
+        width: 12rem;
+        padding: 2rem;
+    }
+    .label-highscore{
+        font-size: 1.6rem;
+    }
+
+    .label-score{
+        font-size: 1.6rem;
+    }
+}
